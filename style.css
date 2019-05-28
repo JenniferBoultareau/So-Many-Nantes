@@ -1,0 +1,206 @@
+/* here we see style for slider */
+.heading-box h2{ width:100%; color: red; }
+.text-box {
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	right: 15%;
+	color: #fff;
+	text-align: center;
+	transform: translateY(-50%);
+}
+.carousel-img{
+  -webkit-filter: grayscale(25%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(25%);
+  filter: brightness(50%);
+
+}
+ /* here is the footer style*/
+.social img {
+	max-width:50px;
+  height: 50px;
+}
+.footer {
+  background-color: #1B181C;
+  text-align: center;
+}
+footer a{
+  color: #fff;
+  
+}
+footer a:hover {
+  color: #26bf93;
+  text-decoration: none;
+}
+
+.separate1 {
+  list-style-type: none;
+  margin-left: 0.8em;
+  padding-right: 0.8em;
+}
+.separate {
+  list-style-type: none;
+  border-right: 1px solid #fff;
+  margin-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  display: flex;
+}
+h1::before,
+h1::after {
+  content: "";
+  flex:1;
+  align-self: center;
+  border-bottom: 1px solid CurrentColor;
+}
+h1::before {margin-right: .3em}
+h1::after {margin-left: .3em}
+
+/*here we are in the homepage*/
+.cadre{
+  background-color: #26bf93;
+  font-size: 100%;
+  color: white;
+  width:30%;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  border-radius:5px;
+}
+
+iframe {
+  width: 100%;
+  height: 750px;
+}
+
+.cadrerestaurant{
+  background-color: #26bf93;
+  font-size: 100%;
+  color: white;
+  width:60%;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  border-radius:5px;
+}
+
+.form{
+	text-align: left;
+	min-width: 40%;
+}
+
+.btn {
+	font-weight: bold;
+	cursor: pointer;
+}
+/*here were are in the map*/
+#mapid { height: 750px; }
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+h1{
+  font-weight: bold;
+}
+
+.card-title{
+  font-weight: bold;
+}
+/* --------------------------------siz of log (so many nantes) + navbar------------------------------------ */
+
+.logo-size {
+  width: 40%;
+}
+
+.textnavbar {
+  font-size: 1.3em;
+}
+
+.ll {
+  transition-property: background-color border;
+  transition-duration: 0.5s;
+}
+
+.ll:hover {
+  background-color: #26bf93;
+  color: white !important;
+  border: solid 1px #26bf93;
+  border-radius: 5px;
+}
+
+.textactive {
+font-weight: bold;
+}
+.newcolorbutton {
+  color: #26bf93 !important;
+  background-color: white;
+  border: solid 1px #26bf93;
+}
+.newcolorbutton:hover {
+  background-color: #26bf93;
+  color: white !important;
+}
+.search-right {
+  justify-content: end;
+}
+
+.centerbutton {
+  justify-content: center;
+}
+
+/* Here is the flip effect*/ 
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+background-color: transparent;
+width: 27.19em;
+height: 16.5em;
+border: 1px solid transparent;
+perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+background-color: #bbb;
+color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+font-family:'Montserrat', sans-serif;
+font-weight:bold;
+font-size: 1.5em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: white;
+color:#26bf93;
+transform: rotateY(180deg);
+}
